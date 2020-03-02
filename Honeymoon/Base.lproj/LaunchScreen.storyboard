@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,11 +10,32 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgound" translatesAutoresizingMaskIntoConstraints="NO" id="piV-5a-Cgj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-honeymoon-app" translatesAutoresizingMaskIntoConstraints="NO" id="VzE-bh-Z0W">
+                                <rect key="frame" x="87" y="383.5" width="240" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Tn6-d9-SXU"/>
+                                    <constraint firstAttribute="height" constant="129" id="U1i-YW-KLy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="piV-5a-Cgj" secondAttribute="trailing" id="5w5-Np-Lnc"/>
+                            <constraint firstItem="piV-5a-Cgj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LHT-sf-3XQ"/>
+                            <constraint firstItem="piV-5a-Cgj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Rtc-0S-ZFk"/>
+                            <constraint firstItem="VzE-bh-Z0W" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="acC-Lf-hpA"/>
+                            <constraint firstItem="piV-5a-Cgj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="c1E-eD-Pft"/>
+                            <constraint firstItem="piV-5a-Cgj" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="x17-l7-UAL"/>
+                            <constraint firstItem="VzE-bh-Z0W" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="y8I-aN-Prc"/>
+                            <constraint firstAttribute="bottom" secondItem="piV-5a-Cgj" secondAttribute="bottom" id="zAG-7f-oZe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +43,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgound" width="2048" height="2049"/>
+        <image name="logo-honeymoon-app" width="280" height="129"/>
+    </resources>
 </document>
